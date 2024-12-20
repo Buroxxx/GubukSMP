@@ -72,6 +72,7 @@ h2 {
     grid-template-rows: repeat(3, 1fr); /* 3 baris */
     gap: 10px; /* Jarak antara foto */
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .ContentFoto img {
@@ -80,6 +81,25 @@ h2 {
     object-fit: cover; /* Agar gambar tidak terdistorsi */
     border-radius: 8px; /* Jika ingin menambahkan sudut melengkung */
     border: 2px solid #beda5b;
+}
+
+.Penjelasan {
+  border-radius: 8px;
+  padding: 20px; /* Memberikan ruang di semua sisi */
+  border: 2px solid #beda5b; /* Garis untuk melihat batas container (opsional) */
+   /* Atur lebar container */
+  margin: 0 auto; /* Centerkan container di tengah layar */
+  background-color: #af9520; /* Warna latar belakang (opsional) */
+}
+
+p {
+  font-weight: bold;
+  text-align: justify; /* Meratakan teks di kedua sisi */
+  line-height: 1.3;    /* Memberikan jarak antar baris */
+  margin-bottom: 15px; /* Memberikan jarak antar paragraf */
+  font-size: 16px;     /* Ukuran font yang nyaman dibaca */
+  color: #333;         /* Warna teks (opsional) */
+  font-family: Arial, sans-serif; /* Jenis font */
 }
 
 li {
@@ -116,7 +136,7 @@ li {
 
 footer {
     background-color: #af9520;
-    text-align: center;
+
     letter-spacing: px;
     border-radius: 10px;
     border: 2px solid #beda5b;
@@ -124,6 +144,7 @@ footer {
     white-space: nowrap; /* Menghindari teks agar tidak terbungkus ke baris berikutnya */
     overflow: hidden; /* Menyembunyikan teks yang keluar dari batas */
     width: 100%; /* Membuat elemen selebar layar */
+    text-align: center;
 }
 
 .footertext {
@@ -133,6 +154,7 @@ footer {
     font-family: Arial;
     color: #beda5b;
     -webkit-text-stroke: 1px black;
+    text-align: center;
 
 }
 
@@ -142,6 +164,7 @@ footer {
 
 .footerinfo {
     font-size: 40px;
+    text-align: center;
 }
 
 @font-face{
