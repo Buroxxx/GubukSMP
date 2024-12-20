@@ -45,10 +45,11 @@ h2 {
     height: auto;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
   }
 
 .Tombol1 {
+  height: 40px;
     letter-spacing: 4px;
     font-weight: bold;
     font-family: serif;
@@ -73,14 +74,19 @@ h2 {
     gap: 10px; /* Jarak antara foto */
     margin-top: 40px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 .ContentFoto img {
     width: 100%; /* Membuat gambar menyesuaikan lebar grid */
     height: auto; /* Mempertahankan rasio aspek gambar */
     object-fit: cover; /* Agar gambar tidak terdistorsi */
-    border-radius: 8px; /* Jika ingin menambahkan sudut melengkung */
-    border: 2px solid #beda5b;
+    border-radius: 20px; /* Jika ingin menambahkan sudut melengkung */
+    border: 4px solid #beda5b;
+}
+
+.Content1 {
+  cursor: pointer;
 }
 
 .Penjelasan {
@@ -105,6 +111,8 @@ p {
 li {
     margin-top: 20px;
     padding: 1px;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 .Fitur {
@@ -118,16 +126,94 @@ li {
     margin-top: 30px;
 }
 
+.TombolFitur {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.Content1 {
+  opacity: 0;
+  transform: translateX(-20px); 
+transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.Content1.visible {
+  opacity: 1; /* Saat terlihat, opacity menjadi 1 (terlihat) */
+  transform: translateX(0px); /* Posisinya bergerak ke atas */
+}
+
+.Content2 {
+  opacity: 0;
+  transform: translateX(20px); 
+transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.Content2.visible {
+  opacity: 1; /* Saat terlihat, opacity menjadi 1 (terlihat) */
+  transform: translateX(0px); /* Posisinya bergerak ke atas */
+}
+
+.Content3 {
+  opacity: 0;
+  transform: translateX(-20px); 
+transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.Content3.visible {
+  opacity: 1; /* Saat terlihat, opacity menjadi 1 (terlihat) */
+  transform: translateX(0px); /* Posisinya bergerak ke atas */
+}
+
+.Content4 {
+  opacity: 0;
+  transform: translateX(20px); 
+transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.Content4.visible {
+  opacity: 1; /* Saat terlihat, opacity menjadi 1 (terlihat) */
+  transform: translateX(0px); /* Posisinya bergerak ke atas */
+}
+
+.Content5 {
+  opacity: 0;
+  transform: translateX(-20px); 
+transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.Content5.visible {
+  opacity: 1; /* Saat terlihat, opacity menjadi 1 (terlihat) */
+  transform: translateX(0px); /* Posisinya bergerak ke atas */
+}
+
+.Content6 {
+  opacity: 0;
+  transform: translateX(20px); 
+transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.Content6.visible {
+  opacity: 1; /* Saat terlihat, opacity menjadi 1 (terlihat) */
+  transform: translateX(0px); /* Posisinya bergerak ke atas */
+}
+
 .Peraturan {
-    transform: translateX(-100%);
-    animation: slideInAnimation 0.5s ease-out forwards;
     font-size: 20px;
     font-weight: bold;
     background-color: #af9520;
     border-radius: 10px;
     border: 2px solid #beda5b;
     margin-top: 10px;
+    opacity: 0;
+    transform: translateY(50px); 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
 }
+
+.Peraturan.visible {
+  opacity: 1; /* Saat terlihat, opacity menjadi 1 (terlihat) */
+  transform: translateY(0px); /* Posisinya bergerak ke atas */
+}
+
 
 .Pemanis {
     display: flex;
@@ -147,8 +233,15 @@ footer {
     text-align: center;
 }
 
+.footertextcontainer {
+  background-color: #33333393;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .footertext {
-    animation: scrollText 6s linear infinite;
+  
+    animation: scrollText 15s linear infinite;
     font-size: 40px;
     font-weight: bold;
     font-family: Arial;
@@ -158,9 +251,6 @@ footer {
 
 }
 
-.footertext {
-
-}
 
 .footerinfo {
     font-size: 25px;
@@ -207,4 +297,14 @@ footer {
     100% {
       transform: translateX(-100%); /* Geser ke luar layar sebelah kiri */
     }
+  }
+
+
+
+
+  /* fitur html */
+  .FiturLengkap {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
   }
