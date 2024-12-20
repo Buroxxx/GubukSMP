@@ -295,7 +295,7 @@ footer {
       transform: translateX(100%); /* Mulai dari posisi di luar layar sebelah kanan */
     }
     100% {
-      transform: translateX(-100%); /* Geser ke luar layar sebelah kiri */
+      transform: translateX(0); /* Geser ke luar layar sebelah kiri */
     }
   }
 
